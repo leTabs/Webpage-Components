@@ -1,0 +1,59 @@
+/* variables */
+:root{
+  --bg-color: 100deg, rgb(6, 6, 6), rgb(0, 21, 37), rgb(0, 20, 32);
+  --bar-color: rgb(255, 255, 255);
+  --bar-color-change01: rgb(190, 240, 251);
+  --bar-color-change02: rgb(255, 0, 221);
+}
+
+html *{
+padding:0 ;
+margin: 0;
+}
+body{
+overflow: hidden;
+}
+/* background styling */
+.loading-screen {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background: linear-gradient(var(--bg-color));
+}
+
+
+/* loading bar styling */
+.loading-bar {
+width: 6rem;
+height: 1rem;
+background-color: var(--bar-color);
+animation: loading-bar 1.5s infinite alternate;
+border-radius: 35px;
+animation: spin 1s linear infinite;
+margin-top: 10rem;
+}
+
+
+
+/* animation */
+@keyframes spin{
+  0%{
+    background-color: var(--bar-color-change02);
+    
+  }
+  25%{
+    margin-top: 0;
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(180deg);
+    background-color: var(--bar-color-change01);
+  }
+  75%{
+    margin-top: 0;
+  }
+  100%{
+    transform: rotate(180deg);
+  }
+}
