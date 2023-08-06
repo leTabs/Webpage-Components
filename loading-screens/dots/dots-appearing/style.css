@@ -1,0 +1,67 @@
+/* variables */
+:root{
+  --bg-color: 100deg, rgb(0, 22, 30), rgb(0, 36, 64), rgb(0, 68, 108);
+  --dot: rgb(255, 7, 177);
+}
+
+html *{
+padding:0 ;
+margin: 0;
+}
+body{
+overflow: hidden;
+}
+/* backgorund styling */
+.loading-screen {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background: linear-gradient(var(--bg-color));
+}
+/* loading dot styling */
+.dot{
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: rgb(0, 247, 255) ;
+  margin: 0 0.25rem 0 0.25rem;
+  position:relative;
+  top: 10%;
+  animation: apearing 1s linear infinite;
+  opacity: 0;
+}
+.dot:nth-of-type(2){
+  animation-delay: 200ms;
+}
+.dot:nth-of-type(3){
+  animation-delay: 250ms;
+}
+.dot:nth-of-type(4){
+  animation-delay: 300ms;
+}
+.dot:nth-of-type(5){
+  animation-delay: 350ms;
+}
+/* animation */
+@keyframes apearing {
+  0%{
+    opacity:0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+/* text styling */
+p{
+  position:absolute;
+  top:65%;
+  font-size: 2rem;
+  font-family:  Arial, sans-serif;
+  font-weight: normal;
+  color: white;
+}
