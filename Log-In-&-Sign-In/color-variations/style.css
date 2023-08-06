@@ -75,16 +75,16 @@ button{
     color: var(--button-text-color);
     transition: 300ms;
 }
+button:hover{
+    background: var(--hover-bg);
+    color: var(--text-color);
+    
+}
 /* forgot password styling */
 p{
     font-size: 0.8rem;
     color: rgb(40, 108, 125);
     transition: 300ms;
-}
-button:hover{
-    background: var(--hover-bg);
-    color: var(--text-color);
-    
 }
 p:hover{
     color: var(--text-color);
