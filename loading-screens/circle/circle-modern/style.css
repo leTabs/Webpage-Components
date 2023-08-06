@@ -1,0 +1,62 @@
+/* variables */
+:root{
+  --bg-color: 120deg, rgb(37, 1, 39), rgb(93, 2, 115), rgb(124, 11, 158);
+  --circle-portion-color: rgb(71, 203, 255);
+}
+html *{
+  padding:0 ;
+  margin: 0;
+}
+body{
+  overflow: hidden;
+}
+/* backgroung styling */
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(var(--bg-color));
+}
+
+/* loading circle styling */
+.loading-circle {
+  width: 3.5rem;
+  height: 3.5rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  border: transparent;
+  border-top: 5px solid var(--circle-portion-color);
+}
+
+/* spin animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* circle's shadow element */
+.shadow{
+  margin-top: 1.5rem;
+  width:3rem;
+  height: 0.5rem;
+  border-radius: 100%;
+  background: rgba(15, 15, 15, 0.712);
+  opacity: 0;
+  animation: shadowing 1s linear infinite
+}
+
+/* shadow animation */
+@keyframes shadowing{
+  0%{
+    opacity:0;
+  }
+  50%{
+    opacity: 0.2;
+  }
+  100%{
+    opacity: 0;
+  }
+}
