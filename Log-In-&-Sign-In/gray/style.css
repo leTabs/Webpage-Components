@@ -2,7 +2,7 @@
 :root{
     --bg-color: 80deg, rgb(38, 38, 38), rgb(191, 191, 191), rgb(69, 69, 69);
     --form-bg-color: 110deg, rgba(30, 30, 30, 0.688), rgb(74, 74, 74), rgba(34, 34, 34, 0.642);
-    --hover-bg:rgba(0, 20, 24, 0.995);
+    --hover-bg:rgba(27, 27, 27, 0.995);
     --text-color: rgb(227, 227, 227);
     --button-bg-color:  rgb(129, 128, 128);
     --button-text-color: white;
@@ -77,17 +77,16 @@ button{
 }
 button:hover{
     background: var(--hover-bg);
-    color: rgb(255, 255, 255);
     
 }
 /* forgot password styling */
 p{
     font-size: 0.8rem;
-    color: rgb(255, 255, 255);
     transition: 300ms;
+    color: var(--text-color)
 }
 p:hover{
-    color: var(--text-color);
+    color: gray;
 }
 
 /* phone sized */
