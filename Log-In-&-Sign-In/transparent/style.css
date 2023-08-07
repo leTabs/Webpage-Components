@@ -7,6 +7,7 @@
     --button-bg-color:  transparent;
     --button-text-color: rgb(53, 189, 219);
     --border-color: rgb(255, 255, 255);
+    --forgot-pass-color: rgb(40, 108, 125);
 }
 html{
     font-family: sans-serif;
@@ -83,7 +84,7 @@ button:hover{
 }
 p{
     font-size: 0.8rem;
-    color: rgb(40, 108, 125);
+    color: var(--forgot-pass-color);
     transition: 300ms;
 }
 p:hover{
@@ -102,6 +103,6 @@ p:hover{
 }
 @media (min-width: 580px) and (max-width: 874px) {
     form{
-        width: 35%
+        width: 35%;
     }
 }
